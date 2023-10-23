@@ -1,0 +1,50 @@
+/* KanbanBoard.css */
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 8px;
+  background-color: #e5e4e2;
+  margin: 8px;
+}
+
+.task {
+  background-color: #808080;
+  color: white;
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addTask {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1;
+  }
+}
